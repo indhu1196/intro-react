@@ -9,13 +9,14 @@ class App extends React.Component {
     this.state = {
       buttonClicked: "",
       assignments: [] /*Below this line, add the students state variable for step 3*/,
+      students: {},
       grades: {}
     };
 
     this.handleButtonClicked = this.handleButtonClicked.bind(this);
     this.addAssignment = this.addAssignment.bind(this);
     /*Uncomment the line below for step 3*/
-    /*this.addStudent = this.addStudent.bind(this);*/
+    this.addStudent = this.addStudent.bind(this);
     this.addGrade = this.addGrade.bind(this);
   }
 
@@ -33,7 +34,9 @@ class App extends React.Component {
   }
 
   /*Write an addStudent function here for step 3*/
+  addStudent(studentName) {
 
+  }
   addGrade(assignment, student, score) {
     let grades = this.state.grades;
     let assignmentName = assignment;
